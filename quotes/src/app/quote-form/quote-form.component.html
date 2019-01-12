@@ -4,18 +4,20 @@
       <div class="form-group">
 
         <label for="quote">Quote</label>
-        <input type="text" required class="form-control" id="quote">
+        <input type="text" required class="form-control" id="quote" [(ngModel)]="newQuote.quote" >
            Display {{newQuote.quote}}
       </div>
       <div class="form-group">
 
         <label for="author">Author</label>
-        <input type="text" required class="form-control" id="author">
+        <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" >
+         Display {{newQuote.author}}
       </div>
       <div class="form-group">
 
         <label for="submit">Submitted by</label>
-        <input type="text" required class="form-control" id="author">
+        <input type="text" required class="form-control" id="submit" [(ngModel)]="newQuote.author">
+         Display {{newQuote.submit}}
       </div>
       <div class="form-group">
         <label for="complete">Completion</label>
