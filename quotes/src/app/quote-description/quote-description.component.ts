@@ -8,13 +8,13 @@ import { Quote } from '../quote'
 export class QuoteDescriptionComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'There is nothing permanent except change.', 'Heraclitus'),
-    new Quote(2, 'Independence is happiness.', 'Susan B. Anthony', ),
-    new Quote(3, 'No act of kindness, no matter how small, is ever wasted.', 'Aesop'),
+    new Quote(1, 'There is nothing permanent except change.', 'Heraclitus','Submitted by Joie'),
+    new Quote(2, 'Independence is happiness.', 'Susan B. Anthony','Submitted by Abby' ),
+    new Quote(3, 'No act of kindness, no matter how small, is ever wasted.', 'Aesop','Submitted by Anon'),
   ]
   @Input ()quote:Quote;
   @Output() isComplete = new EventEmitter<boolean>();
-  // event emitter above
+  // event emitter above and below
   quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
@@ -27,6 +27,10 @@ export class QuoteDescriptionComponent implements OnInit {
       }
     }
   }
+  toogleDetails(index){
+         this.quotes[index].showDescription = !this.quotes[index].showDescription;
+     }
+
   constructor() { }
 
   ngOnInit() {

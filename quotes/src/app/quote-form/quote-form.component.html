@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <form #quoteForm='ngForm' >
+      <div class="form-group">
+
+        <label for="quote">Quote</label>
+        <input type="text" required class="form-control" id="quote">
+           Display {{newQuote.quote}}
+      </div>
+      <div class="form-group">
+
+        <label for="author">Author</label>
+        <input type="text" required class="form-control" id="author">
+      </div>
+      <div class="form-group">
+
+        <label for="submit">Submitted by</label>
+        <input type="text" required class="form-control" id="author">
+      </div>
+      <div class="form-group">
+        <label for="complete">Completion</label>
+        <input type='date' id="complete" required>
+      </div>
+      <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
+    </form>
+  </div>
+</div>

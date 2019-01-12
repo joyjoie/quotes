@@ -1,12 +1,15 @@
 <h1>My Quotes</h1>
 <hr>
-<ul>
-  <div  *ngFor ='let quote of quotes;let i=index'>
-    <li> {{quote.quot}}</li>
-  <!-- This quote is completed at -->
-    <p> {{quote.author}}</p>
-<button (click) = 'quoteDelete(true) '> Delete Quote </button>
-  <!-- <app-root(isComplete)= 'deleteGoal($event,i)'></app-root> -->
+<div class="container">
+  <div class="row">
+    <div *ngFor='let quote of quotes;let i=index'>
+      <li> {{quote.quot}}</li>
+    </div>
+    <!-- <div class="row" *ngIf="quote.showDescription">
+      <app-quote-details [quote]='quote' (isComplete)='deleteGoal($event,i)'></app-quote-details>
+    </div> -->
+    <div class="row">
+        <app-quote-form></app-quote-form>
+    </div>
   </div>
-
-</ul>
+</div>
