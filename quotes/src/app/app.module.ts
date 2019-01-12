@@ -8,13 +8,15 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { BoldPipe } from './bold.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import {FormsModule} from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
     QuoteDescriptionComponent,
     QuoteDetailsComponent,
     BoldPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
