@@ -1,4 +1,4 @@
-import { Component, OnInit,Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote'
 @Component({
   selector: 'app-quote-description',
@@ -8,11 +8,11 @@ import { Quote } from '../quote'
 export class QuoteDescriptionComponent implements OnInit {
 
   quotes = [
-    new Quote(1, 'There is nothing permanent except change.', 'Heraclitus','Submitted by Joie'),
-    new Quote(2, 'Independence is happiness.', 'Susan B. Anthony','Submitted by Abby' ),
-    new Quote(3, 'No act of kindness, no matter how small, is ever wasted.', 'Aesop','Submitted by Anon'),
+    new Quote(1, 'There is nothing permanent except change.', 'Heraclitus', 'Submitted by Joie'),
+    new Quote(2, 'Independence is happiness.', 'Susan B. Anthony', 'Submitted by Abby'),
+    new Quote(3, 'No act of kindness, no matter how small, is ever wasted.', 'Aesop', 'Submitted by Anon'),
   ]
-  @Input ()quote:Quote;
+  @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
   // event emitter above and below
   quoteDelete(complete: boolean) {
@@ -27,16 +27,15 @@ export class QuoteDescriptionComponent implements OnInit {
       }
     }
   }
-  toogleDetails(index){
-         this.quotes[index].showDescription = !this.quotes[index].showDescription;
-     }
-   //   addNewQuote(goal){
-   //     let quoteLength = this.quotes.length;
-   //    this quote.id=quoteLength+1;
-   //    quote.completeDate = new Date(quote.completeDate)
-   //     this.quotes.push(goal)
-   //
-   // }
+  toogleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+    addNewQuote(quote){
+      let quoteLength = this.quotes.length;
+     this.quote.id=quoteLength+1;
+     quote.completeDate = new Date(quote.completeDate);
+      this.quotes.push(quote);
+      }
 
   constructor() { }
 

@@ -2,12 +2,6 @@
 <hr>
 <div *ngFor='let quote of quotes;let i=index'>
   <li> {{quote.quot}}</li>
+  <app-quote-details [quote]='quote' (isComplete)='deleteGoal($event,i)'></app-quote-details>
 </div>
-<!-- <div class="row" *ngIf="quote.showDescription">
-      <app-quote-details [quote]='quote' (isComplete)='deleteGoal($event,i)'></app-quote-details>
-    </div> -->
-
-<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-
-
-</div>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
