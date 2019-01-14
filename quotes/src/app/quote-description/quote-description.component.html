@@ -1,7 +1,9 @@
 <h1>My Quotes</h1>
 <hr>
+<ul>
 <div *ngFor='let quote of quotes;let i=index'>
-  <li> {{quote.quot}}</li>
+{{quote.quot}}
   <app-quote-details [quote]='quote' (isComplete)='deleteGoal($event,i)'></app-quote-details>
 </div>
+</ul>
   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
