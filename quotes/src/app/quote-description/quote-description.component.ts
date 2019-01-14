@@ -9,9 +9,9 @@ import { Quote } from '../quote'
 export class QuoteDescriptionComponent implements OnInit {
 
   quotes =[
-     new Quote (1,'Life','My life is my mine',' written by abby',new Date(2018,3,14),'submitted by lola'),
-     new Quote (2,'Life','My life is my mine',' written by abby',new Date(2018,6,9) ,"submitted by lilo"),
-     new Quote (3,'Life','My life is my mine',' written by me',new Date(2018,7,12),"submitted by lilo"),
+     new Quote (1,'Monday','My life is my mine',' written by abby',new Date(2018,3,14),'submitted by lola'),
+     new Quote (2,'Tuesday','My life is my mine',' written by abby',new Date(2018,6,9) ,"submitted by lilo"),
+     new Quote (3,'Wednesday','My life is my mine',' written by me',new Date(2018,7,12),"submitted by lilo"),
      new Quote (4,'Life','My life is my mine',' written by ivy',new Date(2018,4,18),"submitted by lilo"),
      new Quote (5,'Life','My life is my mine',' written by caro',new Date(2018,2,14),"submitted by lilo"),
      new Quote (6,'Life','My life is my mine',' written by abby',new Date(2018,11,14),"submitted by lilo"),
