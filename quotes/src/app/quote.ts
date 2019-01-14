@@ -1,6 +1,6 @@
 export class Quote {
-  public showDescription:boolean; //responsible for output property binding displaying
-  constructor(public id:number, public quot:string, public author:string ,public submitter:string){
-  this.showDescription=false;
-}
+   public showDescription : boolean;
+   constructor (public id : number, public title: string, public description:string,public author : string, public completeDate:Date ,public submitter: string ){
+       this.showDescription = false
+   }
 }

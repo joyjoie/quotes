@@ -1,6 +1,8 @@
-<form>
-  {{quote.author}} {{quote.submitter}}
-  <button class="btn btn-danger" (click) = 'quoteDelete(true) '> Delete Quote </button>
-</form>
-<button (click)="like()" id "button1"> {{likeCount}}</button>
-<button (click)="dislike()" id "button"> {{dislikeCount}}</button>
+<p>   {{quote.author}} </p>
+<p> {{quote.description}}</p>
+<p> {{quote.submitter}} </p>
+<p> {{quote.completeDate|dateCount}} days ago</p>
+
+<button class="btn btn-danger" (click) = 'deleteQuote(true) '> Delete Quote </button>
+<button (click) ="like()" id= "button1" > <img src="assets/thumbsup.png"> {{likeCount}}</button>
+<button (click) ="dislike()"  id= "button" > <img src="assets/thumbsdown.jpg">  {{dislikeCount}} </button>

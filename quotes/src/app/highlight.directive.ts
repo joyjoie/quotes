@@ -5,6 +5,7 @@ import { Directive,ElementRef} from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor() { }
+  constructor(private elem:ElementRef){
+     this.elem.nativeElement.style.backgroundColor='red'; }
 
 }

@@ -2,8 +2,9 @@
 <hr>
 <ul>
 <div *ngFor='let quote of quotes;let i=index'>
-{{quote.quot}}
-  <app-quote-details [quote]='quote' (isComplete)='deleteGoal($event,i)'></app-quote-details>
+  <p appHighlight> {{quote.title}}</p>
+<button (click)='toggleDetails'> View </button>
+  <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
 </div>
 </ul>
-  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  <app-quote-form (addQuote)="addNewQuote($event,i)"></app-quote-form>
