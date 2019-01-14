@@ -14,7 +14,7 @@ export class QuoteDescriptionComponent implements OnInit {
      new Quote (3,'Wednesday','Do not go to bed angry',' written by me',new Date(2018,7,12),"submitted by lilo"),
      new Quote (4,'Thursday','Pizza melts hearts ',' written by ivy',new Date(2018,4,18),"submitted by lilo"),
      new Quote (5,'Friday','Walking everyday keeps you away from the doctor,maybe',' written by caro',new Date(2018,2,14),"submitted by lilo"),
-     new Quote (6,'Saturday','My life is my mine',' written by abby',new Date(2018,11,14),"submitted by lilo"),
+     new Quote (6,'Saturday','Adventure,Lets :)',' written by abby',new Date(2018,11,14),"submitted by lilo"),
      new Quote (7,'Sunday','My life is my mine',' written by litty',new Date(2019,0,10),"submitted by lilo"),
    ]
 
