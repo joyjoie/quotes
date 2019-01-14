@@ -9,7 +9,7 @@
       <app-quote-details [quote]='quote' (isComplete)='deleteGoal($event,i)'></app-quote-details>
     </div> -->
     <div class="row">
-        <app-quote-form></app-quote-form>
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
 </div>

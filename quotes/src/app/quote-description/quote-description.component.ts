@@ -30,6 +30,13 @@ export class QuoteDescriptionComponent implements OnInit {
   toogleDetails(index){
          this.quotes[index].showDescription = !this.quotes[index].showDescription;
      }
+     addNewQuote(goal){
+       let quoteLength = this.quotes.length;
+       quote.id=quoteLength+1;
+      quote.completeDate = new Date(quote.completeDate)
+       this.quotes.push(goal)
+
+   }
 
   constructor() { }
 
