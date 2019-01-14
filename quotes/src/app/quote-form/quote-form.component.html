@@ -4,7 +4,7 @@
 
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name"  #name="ngModel" required>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.title" name="name" #name="ngModel" required>
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
           <p> Name is Required</p>
         </div>
@@ -12,7 +12,7 @@
 
       <div class="form-group">
         <label for="quote">Quote</label>
-        <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote"  #quote="ngModel" required></textarea>
+        <textarea class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.description" name="quote" #quote="ngModel" required></textarea>
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
           <p> Quote details are Required</p>
         </div>
@@ -20,7 +20,7 @@
 
       <div class="form-group">
         <label for="author">Author</label>
-        <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author"  #author="ngModel" required></textarea>
+        <textarea class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required></textarea>
         <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
           <p> Author is Required</p>
 
@@ -29,7 +29,7 @@
 
       <div class="form-group">
         <label for="submit">Submitted by</label>
-        <textarea class="form-control" id="submit" rows="4" [(ngModel)]="newQuote.submit" name="submit" #submit="ngModel" required></textarea>
+        <textarea class="form-control" id="submit" rows="4" [(ngModel)]="newQuote.submitter" name="submit" #submit="ngModel" required></textarea>
         <div [hidden]="submit.valid ||submit.pristine" class="alert alert-danger">
           <p> Submit is Required</p>
         </div>
